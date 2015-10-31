@@ -1,0 +1,40 @@
+BODY{
+	color:#FFFFFF;
+	font-family:"Tw Cen MT";
+	font-size:1.45em;
+	line-height:1.1em;
+	margin:0px;
+	overflow:hidden;
+	width:2000px;
+}
+
+.active{
+	font-weight:bold;
+}
+
+#cardsOutput DIV{
+	display:inline;
+	float:left;
+	height:100%;
+	overflow:hidden;
+	padding-top:11px;
+	position:relative;
+	width:400px;
+}
+
+#cardsOutput DIV:nth-child(1){
+	left:30px;
+}
+#cardsOutput DIV:nth-child(2){
+	left:100px;
+}
+#cardsOutput DIV:nth-child(3){
+	left:115px;
+}
+#cardsOutput DIV:nth-child(4){
+	left:130px;
+}
+
+#titleValue{
+	font-weight:bold;
+}

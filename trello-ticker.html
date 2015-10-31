@@ -1,0 +1,22 @@
+<html ng-app="TrelloTicker" ng-controller="CardsController">
+	<head>
+		<title>Trello Ticker</title>
+
+		<meta name="author" content="Bert Johnson, https://bertjohnson.com">
+
+		<link href="trello-ticker.css" rel="stylesheet" type="text/css"></link>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-sanitize.js"></script>
+				
+		<script src="trello-ticker.js"></script>
+	</head>
+	<body>
+		<div id="cardsOutput">
+			<div id="titleValue" ng-bind-html="titleValue"></div>
+			
+			<div data-ng-repeat="card in cards" class="card {{card.className}}" ng-bind-html="card.name"></div>
+		</div>
+	</body>
+</html>
